@@ -1,0 +1,158 @@
+﻿<Page
+    x:Class="MyBand.Pages.ActivityTracking"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBand.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="{Binding DataBindings, RelativeSource={RelativeSource Self}}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- cabecera -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Mi Band Tracker" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Actividad" FontSize="{StaticResource TextStyleExtraLargePlusFontSize}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Margin="0,10,0,0"/>
+        </StackPanel>
+        <!-- informacion -->
+        <Grid Grid.Row="1" Margin="5,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <!-- grafica -->
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- contenido -->
+                <!-- barras -->
+                <Rectangle x:Name="bar1" Grid.Row="0" Grid.Column="0" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar1.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="bar2" Grid.Row="0" Grid.Column="1" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar2.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="bar3" Grid.Row="0" Grid.Column="2" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar3.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="bar4" Grid.Row="0" Grid.Column="3" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar4.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="bar5" Grid.Row="0" Grid.Column="4" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar5.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="bar6" Grid.Row="0" Grid.Column="5" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar6.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle x:Name="bar7" Grid.Row="0" Grid.Column="6" Fill="{StaticResource PhoneAccentBrush}" Margin="5,10,5,5" RenderTransformOrigin="0.5,1" Tapped="Rectangle_Tapped">
+                    <Rectangle.RenderTransform>
+                        <CompositeTransform ScaleY="{Binding Bar7.ScaleY}"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <!-- fila de dias -->
+
+                <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="7" BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="2" Margin="5,0,5,5" />
+                <TextBlock Grid.Row="2"  Grid.Column="0"  Text="01/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="2"  Grid.Column="1"  Text="02/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="2"  Grid.Column="2"  Text="03/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="2"  Grid.Column="3"  Text="04/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="2"  Grid.Column="4"  Text="05/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="2"  Grid.Column="5"  Text="06/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                <TextBlock Grid.Row="2"  Grid.Column="6"  Text="07/01" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+            </Grid>
+
+            <!-- datos del dia -->
+            <Grid Grid.Row="1" VerticalAlignment="Bottom" Margin="0,10,0,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Daily Distance" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.DailyDistance}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Daily Steps" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.DailySteps}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="2" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Daily Burn" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.DailyBurn}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Walk Distance" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.WalkDistance}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Walk Time" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.WalkTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Walk Burn" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.WalkBurn}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="0" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Run Distance" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.RunDistance}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="21" Grid.Column="1" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Run Time" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.RunTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="2" Background="{StaticResource PhoneAccentBrush}" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="Run Burn" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,5" />
+                    <TextBlock Text="{Binding CurrentDay.RunBurn}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

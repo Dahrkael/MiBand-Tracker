@@ -1,0 +1,206 @@
+﻿<Page
+    x:Class="MyBand.Pages.Main"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Flyout x:Name="InputDialogFlyout" x:Key="InputDialog">
+            <StackPanel>
+                <TextBlock x:Uid="InputDialogFlyoutText" x:Name="InputDialogText" Text="Introduzca el nuevo valor" />
+                <TextBox x:Name="InputDialogBox" HorizontalAlignment="Stretch" />
+                <Button x:Uid="InputDialogFlyoutButton" x:Name="InputDialogButton" Click="InputDialogButton_Click" Content="Modificar" />
+            </StackPanel>
+        </Flyout>
+
+        <DataTemplate x:Key="AlarmHeaderTemplate">
+            <TextBlock FontSize="{StaticResource TextStyleExtraLargeFontSize}" Foreground="{StaticResource PhoneForegroundBrush}" Text="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Key="AlarmContentTemplate" >
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left" FontSize="{StaticResource TextStyleSmallFontSize}" Text="{Binding}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="99*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar x:Name="pgConnecting" IsIndeterminate="{Binding BGLoading}" Grid.Row="0" Visibility="{Binding BGLoadingV}" />
+        <Pivot x:Name="Hubbie" Title="Mi Band Tracker" IsLocked="{Binding Loading}" Grid.Row="1">
+            <PivotItem x:Uid="CurrentData" x:Name="CurrentData" Header="Datos actuales">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="txtBandName2" Text="{Binding BandName}" VerticalAlignment="Top" Grid.Column="0" FontSize="{StaticResource TextStyleExtraExtraLargeFontSize}" Grid.ColumnSpan="3" HorizontalAlignment="Left" DoubleTapped="txtBandName2_DoubleTapped" 
+                        FlyoutBase.AttachedFlyout="{StaticResource InputDialog}" />
+                    <TextBlock x:Name="txtBandMAC" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding MACAddress}" VerticalAlignment="Center" FontSize="{StaticResource TextStyleMediumFontSize}" Grid.ColumnSpan="3" Grid.Column="0" Margin="0,15,0,0"/>
+
+                    <TextBlock x:Name="txtBatteryLevel" HorizontalAlignment="Center" Text="{Binding Batterylevel}" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Grid.Column="4" VerticalAlignment="Top" Margin="0" DoubleTapped="txtBatteryLevel_DoubleTapped"/>
+                    <Image x:Name="imgBatteryState" Source="{Binding BatteryState}" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                    <TextBlock x:Name="txtLastCharge" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding LastCharged}" VerticalAlignment="Center" Grid.Column="3" FontSize="{StaticResource TextStyleMediumFontSize}" Grid.ColumnSpan="3" Margin="0,15,0,0"/>
+
+                    <TextBlock x:Uid="TitleCurrentSteps" x:Name="txtCurrentSteps1" TextWrapping="Wrap" Text="Pasos actuales" VerticalAlignment="Center" FontSize="{StaticResource TextStyleExtraLargePlusFontSize}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="txtCurrentSteps2" TextWrapping="Wrap" Text="{Binding CurrentSteps}" VerticalAlignment="Center" FontSize="90" Grid.Row="2" Grid.ColumnSpan="6" HorizontalAlignment="Center" DoubleTapped="txtCurrentSteps2_DoubleTapped"
+                        FlyoutBase.AttachedFlyout="{StaticResource InputDialog}" 
+                        Foreground="{StaticResource PhoneAccentBrush}" />
+
+                    <TextBlock x:Name="txtDistance" TextWrapping="Wrap" Text="{Binding CurrentDistance}" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="txtCalories" TextWrapping="Wrap" Text="{Binding CurrentCalories}" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                    <TextBlock x:Uid="TitleGoal" x:Name="txtGoal1" TextWrapping="Wrap" Text="Objetivo diario" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <TextBlock x:Name="txtGoal2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Goal}" VerticalAlignment="Center" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3" DoubleTapped="txtGoal2_DoubleTapped" />
+
+                    <TextBlock x:Uid="TitleRemainingSteps" x:Name="txtRemainingSteps1" TextWrapping="Wrap" Text="Pasos restantes" VerticalAlignment="Bottom" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.Row="3" HorizontalAlignment="Center" Grid.ColumnSpan="3"/>
+                    <TextBlock x:Name="txtRemainingSteps" TextWrapping="Wrap" Text="{Binding RemainingSteps}" VerticalAlignment="Center" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Grid.ColumnSpan="3" Grid.Row="4" HorizontalAlignment="Center" />
+
+                    <ProgressBar x:Name="pbRemainingSteps" VerticalAlignment="Stretch" Value="{Binding ProgressBarSteps}" Maximum="{Binding Goal}" Grid.ColumnSpan="4" Grid.Row="5" Grid.Column="1"/>
+
+                    <ProgressRing IsActive="{Binding Loading}" Grid.ColumnSpan="6" Canvas.ZIndex="1" Grid.RowSpan="6" />
+                    <TextBlock x:Uid="Connecting" Visibility="{Binding LoadingV}" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Canvas.ZIndex="2" Text="Conectando a Mi Band" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="{StaticResource TextStyleLargeFontSize}" Foreground="{StaticResource PhoneAccentBrush}" />
+                </Grid>
+            </PivotItem>
+            <PivotItem x:Uid="Configurations" x:Name="Configurations" Header="Alarmas y ajustes">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.ColumnSpan="6">
+                        <ToggleSwitch x:Uid="Alarm1" x:Name="tgAlarm1" HeaderTemplate="{StaticResource AlarmHeaderTemplate}" OffContentTemplate="{StaticResource AlarmContentTemplate}" OnContentTemplate="{StaticResource AlarmContentTemplate}"  VerticalAlignment="Top" OffContent="Desactivada" OnContent="{Binding EnabledText}" Header="Alarma 1" IsOn="{Binding Enabled, Mode=TwoWay}" Tapped="tgAlarm_Tapped" Toggled="tgAlarm_Toggled" Tag="{Binding WhenText}" />
+                        <TextBlock x:Name="txtAlarm1" Text="{Binding WhenText}" FontSize="{StaticResource TextStyleSmallFontSize}" Foreground="{StaticResource ToggleSwitchDisabledForegroundThemeBrush}" VerticalAlignment="Top" Margin="0,-10,0,0" />
+                    </StackPanel>
+                    <StackPanel Grid.ColumnSpan="6" Grid.Row="1">
+                        <ToggleSwitch x:Uid="Alarm2" x:Name="tgAlarm2" HeaderTemplate="{StaticResource AlarmHeaderTemplate}" OffContentTemplate="{StaticResource AlarmContentTemplate}" OnContentTemplate="{StaticResource AlarmContentTemplate}"  VerticalAlignment="Top" OffContent="Desactivada" OnContent="{Binding EnabledText}" Header="Alarma 2" IsOn="{Binding Enabled, Mode=TwoWay}" Tapped="tgAlarm_Tapped" Toggled="tgAlarm_Toggled" Tag="{Binding WhenText}" />
+                        <TextBlock x:Name="txtAlarm2" Text="{Binding WhenText}" FontSize="{StaticResource TextStyleSmallFontSize}" Foreground="{StaticResource ToggleSwitchDisabledForegroundThemeBrush}" VerticalAlignment="Top" Margin="0,-10,0,0" />
+                    </StackPanel>
+                    <StackPanel Grid.ColumnSpan="6" Grid.Row="2">
+                        <ToggleSwitch x:Uid="Alarm3" x:Name="tgAlarm3" HeaderTemplate="{StaticResource AlarmHeaderTemplate}" OffContentTemplate="{StaticResource AlarmContentTemplate}" OnContentTemplate="{StaticResource AlarmContentTemplate}" VerticalAlignment="Top" OffContent="Desactivada" OnContent="{Binding EnabledText}" Header="Alarma 3" IsOn="{Binding Enabled, Mode=TwoWay}" Tapped="tgAlarm_Tapped" Toggled="tgAlarm_Toggled" Tag="{Binding WhenText}" />
+                        <TextBlock x:Name="txtAlarm3" Text="{Binding WhenText}" FontSize="{StaticResource TextStyleSmallFontSize}" Foreground="{StaticResource ToggleSwitchDisabledForegroundThemeBrush}" VerticalAlignment="Top" Margin="0,-10,0,0" />
+                    </StackPanel>
+
+                    <Border Grid.Row="3" Grid.ColumnSpan="6" BorderThickness="0,1,0,0" VerticalAlignment="Top" BorderBrush="{ThemeResource PhoneAccentBrush}" Margin="0,10,0,0" />
+
+                    <TextBlock x:Uid="ColorTheme" Grid.Column="0" HorizontalAlignment="Left" Grid.Row="3" TextWrapping="Wrap" Text="Esquema de color:" VerticalAlignment="Center" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.ColumnSpan="6" />
+                    <TextBlock x:Name="txtThemeColor" Text="{Binding ColorTheme}" Grid.Column="3" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.ColumnSpan="3" Foreground="{StaticResource PhoneAccentBrush}" HorizontalAlignment="Right" Tapped="txtThemeColor_Tapped">
+                    <FlyoutBase.AttachedFlyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem x:Uid="Blue" Text="Azul" Tag="000606" Click="setColorTheme_Click" />
+                            <MenuFlyoutItem x:Uid="Green" Text="Verde" Tag="040500" Click="setColorTheme_Click" />
+                            <MenuFlyoutItem x:Uid="Red" Text="Rojo" Tag="060102" Click="setColorTheme_Click" />
+                            <MenuFlyoutItem x:Uid="Orange" Text="Naranja" Tag="060200" Click="setColorTheme_Click" />
+                        </MenuFlyout>
+                    </FlyoutBase.AttachedFlyout>
+                    </TextBlock>
+                    <TextBlock x:Uid="WearLocation" Grid.Column="0" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="Localización:" VerticalAlignment="Top" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.ColumnSpan="6">
+                    </TextBlock>
+                    <TextBlock x:Name="txtCurrentLocation" Text="{Binding WearLocationS}" Grid.Column="3" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="{StaticResource TextStyleLargeFontSize}" Grid.ColumnSpan="3" Foreground="{StaticResource PhoneAccentBrush}" HorizontalAlignment="Right" Tapped="txtCurrentLocation_Tapped">
+                    <FlyoutBase.AttachedFlyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem x:Uid="LeftHand" Text="Muñeca izquierda" Tag="0" Click="setLocation_Click" />
+                            <MenuFlyoutItem x:Uid="RightHand" Text="Muñeca derecha" Tag="1" Click="setLocation_Click" />
+                            <MenuFlyoutItem x:Uid="Necklace" Text="Cuello" Tag="2" Click="setLocation_Click" />
+                        </MenuFlyout>
+                    </FlyoutBase.AttachedFlyout>
+                    </TextBlock>
+                    <Button x:Uid="ChangeUserInfo" x:Name="btnChangeUserInfo" Grid.Row="5" Content="Modificar información de usuario" HorizontalAlignment="Center" Grid.ColumnSpan="6" Click="btnChangeUserInfo_Click"/>
+                    <Button x:Uid="ExtraCommands" x:Name="btnExtraCommands" Grid.Row="6" Content="Funciones extra de la pulsera" HorizontalAlignment="Center" Grid.ColumnSpan="6">
+                        <Button.Flyout>
+                            <MenuFlyout x:Name="ExtrasMenu" Placement="Bottom">
+                                <MenuFlyoutItem x:Uid="ExtraCommandLocate" Text="Localizar" Click="ExtraCommands_Locate"/>
+                                <MenuFlyoutSeparator/>
+                                <MenuFlyoutItem x:Uid="ExtraCommandSelfTest" Text="Autocomprobación" Click="ExtraCommands_SelfTest"/>
+                                <MenuFlyoutItem x:Uid="ExtraCommandReboot" Text="Reiniciar pulsera" Click="ExtraCommands_Reboot"/>
+                                <MenuFlyoutItem x:Uid="ExtraCommandHardReset" Text="Volver a ajustes de fábrica" Click="ExtraCommands_FactoryReset"/>
+                                <MenuFlyoutSeparator/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                </Grid>
+            </PivotItem>
+            <PivotItem x:Uid="Information" x:Name="Information" Header="Información">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Uid="MiBandInformation" Text="Información de la Mi Band" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Foreground="{StaticResource PhoneAccentBrush}" Margin="0,0,0,5"/>
+                    <TextBlock x:Uid="FirmwareVersion" FontSize="{StaticResource TextStyleLargeFontSize}" Text="Versión del firmware:" />
+                    <TextBlock FontSize="{StaticResource TextStyleLargeFontSize}" Text="{Binding FirmwareVersion}" Margin="10,0,0,5" HorizontalAlignment="Right" />
+                    <TextBlock x:Uid="ProfileVersion" FontSize="{StaticResource TextStyleLargeFontSize}" Text="Versión del perfil:" />
+                    <TextBlock FontSize="{StaticResource TextStyleLargeFontSize}" Text="{Binding ProfileVersion}" Margin="10,0,0,5" HorizontalAlignment="Right" />
+                    <TextBlock x:Uid="HardwareVersion" FontSize="{StaticResource TextStyleLargeFontSize}" Text="Versión del hardware:" />
+                    <TextBlock FontSize="{StaticResource TextStyleLargeFontSize}" Text="{Binding HardwareVersion}" Margin="10,0,0,5" HorizontalAlignment="Right" />
+                    <TextBlock x:Uid="Appearance" FontSize="{StaticResource TextStyleLargeFontSize}" Text="Aspecto:" />
+                    <TextBlock FontSize="{StaticResource TextStyleLargeFontSize}" Text="{Binding Appearance}" Margin="10,0,0,5" HorizontalAlignment="Right" />
+                    <TextBlock x:Uid="SyncDateTime" FontSize="{StaticResource TextStyleLargeFontSize}" Text="Hora sincronizada:" />
+                    <TextBlock FontSize="{StaticResource TextStyleLargeFontSize}" Text="{Binding HoraSincronizada}" Margin="10,0,0,5" HorizontalAlignment="Right" />
+                    <Border BorderThickness="0,1,0,0" VerticalAlignment="Top" BorderBrush="{ThemeResource PhoneAccentBrush}" Margin="0,10" />
+                    <TextBlock x:Uid="AppInfo" Text="Información de la aplicación" FontSize="{StaticResource TextStyleExtraLargeFontSize}" Foreground="{StaticResource PhoneAccentBrush}" VerticalAlignment="Top" Margin="0,0,0,5"/>
+                    <TextBlock x:Uid="AppVersion" FontSize="{StaticResource TextStyleLargeFontSize}" Text="Versión:" />
+                    <TextBlock FontSize="{StaticResource TextStyleLargeFontSize}" Text="{Binding AppVersion}" Margin="10,0,0,5" HorizontalAlignment="Right" />
+                    <Button x:Uid="DeleteAppData" x:Name="btnDeleteSettings" Content="Borrar datos de la aplicación" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="btnDeleteSettings_Click"/>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal">
+            <!--
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="btnStepsTracking" Label="Steps" Click="btnStepsTracking_Click" >
+                    <AppBarButton.Icon>
+                        <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#x1f463;" FontSize="20" />
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <AppBarButton x:Name="btnSleepTracking" Label="Sleep" Click="btnSleepTracking_Click">
+                    <AppBarButton.Icon>
+                        <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#x1f4a4;" FontSize="20" Margin="0 0 0 5"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <AppBarButton x:Name="btnSyncTracking" Label="Sync" Click="btnSyncTracking_Click">
+                    <AppBarButton.Icon>
+                        <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#xe117;" FontSize="20" />
+                    </AppBarButton.Icon>
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
+            -->
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Uid="APBForum" x:Name="appbtnForum" Label="Foro de ayuda" Click="appbtnForum_Click" />
+                <AppBarButton x:Uid="APBReport" x:Name="appbtnReport" Label="Reportar error por email" Click="appbtnReport_Click" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

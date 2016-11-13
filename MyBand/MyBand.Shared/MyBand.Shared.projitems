@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>8923dc15-b60b-4fb4-a5df-4e1662ef36c4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MyBand</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\ActivityTracker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Sleep\DeepSleepBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Sleep\LightSleepBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Sleep\SleepBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Sleep\SleepPeriod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Steps\RunStepsBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Steps\StepsBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Steps\StepsPeriod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ActivityTracking\Steps\WalkStepsBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Alarm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\BatteryInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Database\ActivityFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Database\DB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Database\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Database\SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\DeviceInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ColorTheme.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\LEParams.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\MiBand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SensorData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SmallEntities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\UserInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObservableDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\battery-Charging.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\battery-None.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\battery-NotCharging.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\battery-Low.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\battery-Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\es-ES\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\ru-RU\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\zh-Hans\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\zh-Hant\Resources.resw" />
+  </ItemGroup>
+</Project>

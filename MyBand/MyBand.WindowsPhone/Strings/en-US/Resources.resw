@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Age.Text" xml:space="preserve">
+    <value>Age:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="AgeYears.Text" xml:space="preserve">
+    <value>years</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Alarm1.Header" xml:space="preserve">
+    <value>Alarm 1</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm1.OffContent" xml:space="preserve">
+    <value>Off</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm2.Header" xml:space="preserve">
+    <value>Alarm 2</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm2.OffContent" xml:space="preserve">
+    <value>Off</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm3.Header" xml:space="preserve">
+    <value>Alarm 3</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm3.OffContent" xml:space="preserve">
+    <value>Off</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="AlarmSetTo" xml:space="preserve">
+    <value>Triggers at </value>
+    <comment>Alarms</comment>
+  </data>
+  <data name="Alias.Text" xml:space="preserve">
+    <value>Alias:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Appearance.Text" xml:space="preserve">
+    <value>Appearance:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AppInfo.Text" xml:space="preserve">
+    <value>Application information</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AppVersion.Text" xml:space="preserve">
+    <value>Version:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AuthErrorText" xml:space="preserve">
+    <value>There was a problem initializing the band connection.
+If its the first time, try to tap multiple times the band while connecting.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="BatteryChargedSince" xml:space="preserve">
+    <value>Charged </value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryDays" xml:space="preserve">
+    <value> days ago</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryHours" xml:space="preserve">
+    <value> hours ago</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryMinutes" xml:space="preserve">
+    <value> minutes ago</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryMissing" xml:space="preserve">
+    <value>No battery</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryNeverCharged" xml:space="preserve">
+    <value>Never charged</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryRecent" xml:space="preserve">
+    <value>Charged recently</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="ColorBlue" xml:space="preserve">
+    <value>Blue</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Blue.Text" xml:space="preserve">
+    <value>Blue</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ButtonSave.Content" xml:space="preserve">
+    <value>Save</value>
+    <comment>All Screens</comment>
+  </data>
+  <data name="ChangeUserInfo.Content" xml:space="preserve">
+    <value>Modify user information</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ColorTheme.Text" xml:space="preserve">
+    <value>Color theme:</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Configurations.Header" xml:space="preserve">
+    <value>Configurations</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="Connecting.Text" xml:space="preserve">
+    <value>Connecting to Mi Band</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="CriticalError" xml:space="preserve">
+    <value>Critical Error</value>
+    <comment>Exceptions</comment>
+  </data>
+  <data name="CurrentData.Header" xml:space="preserve">
+    <value>Current Data</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="DeleteAppData.Content" xml:space="preserve">
+    <value>Delete app information</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="DeleteInfoConfirmNo" xml:space="preserve">
+    <value>Nooo!!</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmText" xml:space="preserve">
+    <value>Are you sure you want to delete all saved information?
+The application will close.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmTitle" xml:space="preserve">
+    <value>Irreversible action</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmYes" xml:space="preserve">
+    <value>Yes, I'm sure</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoSuccessText" xml:space="preserve">
+    <value>Information deleted.
+Exiting app.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoSuccessTitle" xml:space="preserve">
+    <value>Action completed</value>
+    <comment>Info</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Everyday" xml:space="preserve">
+    <value>Everyday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="ExtraCommandHardReset.Text" xml:space="preserve">
+    <value>Hard Reset</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandLocate.Text" xml:space="preserve">
+    <value>Locate</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandReboot.Text" xml:space="preserve">
+    <value>Reboot band</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommands.Content" xml:space="preserve">
+    <value>Band extra functions</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandSelfTest.Text" xml:space="preserve">
+    <value>Selftest</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="FirmwareVersion.Text" xml:space="preserve">
+    <value>Firmware version:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Friday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Gender.Text" xml:space="preserve">
+    <value>Gender:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="ColorGreen" xml:space="preserve">
+    <value>Green</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Green.Text" xml:space="preserve">
+    <value>Green</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="GreetingText" xml:space="preserve">
+    <value>Thanks for participating in the MiBand Tracker  beta.
+Remember that this is a product in development and problems can arise. If you decide to continue using the application is at your own risk.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="GreetingTitle" xml:space="preserve">
+    <value>Welcome</value>
+    <comment>Info</comment>
+  </data>
+  <data name="HardResetUnavailable" xml:space="preserve">
+    <value>Function unavailable</value>
+    <comment>Info</comment>
+  </data>
+  <data name="HardwareVersion.Text" xml:space="preserve">
+    <value>Hardware version:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Height.Text" xml:space="preserve">
+    <value>Height:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Information.Header" xml:space="preserve">
+    <value>Information</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="InitialConfigWarningText" xml:space="preserve">
+    <value>Some settings (color, location, alarms) can not be recovered.
+It is recommended to configure them now.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="InitialConfigWarningTitle" xml:space="preserve">
+    <value>New Mi Band synchronized</value>
+    <comment>Info</comment>
+  </data>
+  <data name="InputDialogFlyoutButton.Content" xml:space="preserve">
+    <value>Modify</value>
+    <comment>GenericInputDialog</comment>
+  </data>
+  <data name="InputDialogFlyoutText.Text" xml:space="preserve">
+    <value>Enter new value</value>
+    <comment>GenericInputDialog</comment>
+  </data>
+  <data name="LeftHand.Text" xml:space="preserve">
+    <value>Left Hand</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="MiBandInformation.Text" xml:space="preserve">
+    <value>Mi Band information</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="MiBandNotFoundText" xml:space="preserve">
+    <value>Check that:
+-Bluetooth is turned on
+-The Mi Band is paired
+-The Mi Band has battery</value>
+    <comment>Error</comment>
+  </data>
+  <data name="MiBandNotFoundTitle" xml:space="preserve">
+    <value>Mi Band not found</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Monday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Necklace.Text" xml:space="preserve">
+    <value>Necklace</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Never</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="ColorOrange" xml:space="preserve">
+    <value>Orange</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Orange.Text" xml:space="preserve">
+    <value>Orange</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ProfileVersion.Text" xml:space="preserve">
+    <value>Profile version:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="RadioButtonFemale.Content" xml:space="preserve">
+    <value>Female</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="RadioButtonMale.Content" xml:space="preserve">
+    <value>Male</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="ColorRed" xml:space="preserve">
+    <value>Red</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Red.Text" xml:space="preserve">
+    <value>Red</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="RightHand.Text" xml:space="preserve">
+    <value>Right Hand</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Saturday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="SavedData.Text" xml:space="preserve">
+    <value>Saved data:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataDefault.Content" xml:space="preserve">
+    <value>Default</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataDelete.Content" xml:space="preserve">
+    <value>Delete</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataKeep.Content" xml:space="preserve">
+    <value>Keep</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SetAlarmErrorText" xml:space="preserve">
+    <value>Failed to save the alarm into the band, check the connection</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetAlarmErrorTitle" xml:space="preserve">
+    <value>Error setting alarm</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetAlarmEveryday.Content" xml:space="preserve">
+    <value>Everyday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmExplanation.Text" xml:space="preserve">
+    <value>Wake up up to 30 minutes earlier during light sleep</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmFriday.Content" xml:space="preserve">
+    <value>Friday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmHeader.Text" xml:space="preserve">
+    <value>Alarm configuration</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmMonday.Content" xml:space="preserve">
+    <value>Monday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmRepeat.Text" xml:space="preserve">
+    <value>Repeats on:</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSaturday.Content" xml:space="preserve">
+    <value>Saturday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSmartMode.Header" xml:space="preserve">
+    <value>Smart mode</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSunday.Content" xml:space="preserve">
+    <value>Sunday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmThursday.Content" xml:space="preserve">
+    <value>Thursday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmTime.Text" xml:space="preserve">
+    <value>Time:</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmTuesday.Content" xml:space="preserve">
+    <value>Tuesday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmWednesday.Content" xml:space="preserve">
+    <value>Wednesday</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp1.Text" xml:space="preserve">
+    <value>Set daily step goal you want to achieve</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp2.Text" xml:space="preserve">
+    <value>According to some studies, we recommend doing at least 40 minutes of exercise a day.</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp3.Text" xml:space="preserve">
+    <value>That's about 8,000 steps a day.</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalHeader.Text" xml:space="preserve">
+    <value>Daily Goal</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetGoalError" xml:space="preserve">
+    <value>Error setting daily goal</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalErrorText" xml:space="preserve">
+    <value>Failed to save the daily goal into the band, check the connection</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalErrorTitle" xml:space="preserve">
+    <value>Error setting daily goal</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalInvalid" xml:space="preserve">
+    <value>Invalid steps number</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalRetryText" xml:space="preserve">
+    <value>Enter a goal</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetNameError" xml:space="preserve">
+    <value>Error setting new name</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetNameMaxChars" xml:space="preserve">
+    <value>The name must be a maximum of 10 characters</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetStepsError" xml:space="preserve">
+    <value>Error setting new step number</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetStepsInvalid" xml:space="preserve">
+    <value>Invalid steps number</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetThemeColorError" xml:space="preserve">
+    <value>Could not change the color scheme</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetUserInfoHeader.Text" xml:space="preserve">
+    <value>User information</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SetWearLocationError" xml:space="preserve">
+    <value>Could not modify the wear location</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SmartMode" xml:space="preserve">
+    <value>Smart Mode</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sunday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="SyncDateTime.Text" xml:space="preserve">
+    <value>Synchronization date:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Thursday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="TitleCurrentSteps.Text" xml:space="preserve">
+    <value>Current Steps</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="TitleGoal.Text" xml:space="preserve">
+    <value>Daily Goal</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="TitleRemainingSteps.Text" xml:space="preserve">
+    <value>Remaining Steps</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="WearLocation.Text" xml:space="preserve">
+    <value>Wear Location:</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Wednesday</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Weight.Text" xml:space="preserve">
+    <value>Weight:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="WearLocationLeftHand" xml:space="preserve">
+    <value>Left Hand</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="WearLocationNecklace" xml:space="preserve">
+    <value>Necklace</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="WearLocationRightHand" xml:space="preserve">
+    <value>Right Hand</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="APBForum.Label" xml:space="preserve">
+    <value>Help forum (spanish &amp; english)</value>
+    <comment>BottomAppBar</comment>
+  </data>
+  <data name="APBReport.Label" xml:space="preserve">
+    <value>Send report by email</value>
+    <comment>BottomAppBar</comment>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Xiaomi Mi Band companion app.
+Pedometer, alarms and sleep tracking.
+Requires a Xiaomi Mi Band paired by bluetooth in order to work.
+
+IMPORTANT:
+In case live steps notification or alarms dont work, unpair the band, restart the phone and pair again.</value>
+    <comment>App Data</comment>
+  </data>
+  <data name="NotifError1" xml:space="preserve">
+    <value>Error turning on state notifications</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError2" xml:space="preserve">
+    <value>Error turning on realtime steps notifications</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError3" xml:space="preserve">
+    <value>Error turning on battery notifications</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError4" xml:space="preserve">
+    <value>Error turning on activity notifications</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError5" xml:space="preserve">
+    <value>Error turning on sensor notifications</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="BandNotReadyText" xml:space="preserve">
+    <value>Still synchronizing data between the app and the band.
+Please wait until the top loading bar disappears.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="BandNotReadyTitle" xml:space="preserve">
+    <value>Synchronizing Mi Band</value>
+    <comment>Error</comment>
+  </data>
+</root>

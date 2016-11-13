@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Age.Text" xml:space="preserve">
+    <value>年齡</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="AgeYears.Text" xml:space="preserve">
+    <value>年</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Alarm1.Header" xml:space="preserve">
+    <value>鬧鐘1</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm1.OffContent" xml:space="preserve">
+    <value>關</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm2.Header" xml:space="preserve">
+    <value>鬧鐘2</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm2.OffContent" xml:space="preserve">
+    <value>關</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm3.Header" xml:space="preserve">
+    <value>鬧鐘3</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm3.OffContent" xml:space="preserve">
+    <value>關</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="AlarmSetTo" xml:space="preserve">
+    <value>觸發在</value>
+    <comment>Alarms</comment>
+  </data>
+  <data name="Alias.Text" xml:space="preserve">
+    <value>別名</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="APBForum.Label" xml:space="preserve">
+    <value>幫助論壇（西班牙語&amp;英語）</value>
+    <comment>BottomAppBar</comment>
+  </data>
+  <data name="APBReport.Label" xml:space="preserve">
+    <value>發送報告通過電子郵件</value>
+    <comment>BottomAppBar</comment>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>小米手環替代應用程式.
+計步器，鬧鐘和睡眠追蹤
+需要與小米手環配對透過藍芽以確保正常工作.
+重要事項:
+在即時通知或鬧鐘無法工作時，解除藍芽配對，重新啟動手機然後再次配對</value>
+    <comment>App Data</comment>
+  </data>
+  <data name="Appearance.Text" xml:space="preserve">
+    <value>外觀：</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AppInfo.Text" xml:space="preserve">
+    <value>應用訊息</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AppVersion.Text" xml:space="preserve">
+    <value>版本</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AuthErrorText" xml:space="preserve">
+    <value>有個初始化連結的問題</value>
+    <comment>Error</comment>
+  </data>
+  <data name="BatteryChargedSince" xml:space="preserve">
+    <value>電量</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryDays" xml:space="preserve">
+    <value>天前</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryHours" xml:space="preserve">
+    <value>小時前</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryMinutes" xml:space="preserve">
+    <value>分鐘前</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryMissing" xml:space="preserve">
+    <value>電量不足</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryNeverCharged" xml:space="preserve">
+    <value>從未充電</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryRecent" xml:space="preserve">
+    <value>最近充電</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="Blue.Text" xml:space="preserve">
+    <value>藍色</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ButtonSave.Content" xml:space="preserve">
+    <value>儲存</value>
+    <comment>All Screens</comment>
+  </data>
+  <data name="ChangeUserInfo.Content" xml:space="preserve">
+    <value>修改用戶訊息</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ColorBlue" xml:space="preserve">
+    <value>藍色</value>
+    <comment>colors</comment>
+  </data>
+  <data name="ColorGreen" xml:space="preserve">
+    <value>綠色</value>
+    <comment>colors</comment>
+  </data>
+  <data name="ColorOrange" xml:space="preserve">
+    <value>橙色</value>
+    <comment>colors</comment>
+  </data>
+  <data name="ColorRed" xml:space="preserve">
+    <value>紅色</value>
+    <comment>colors</comment>
+  </data>
+  <data name="ColorTheme.Text" xml:space="preserve">
+    <value>顏色主題：</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Configurations.Header" xml:space="preserve">
+    <value>配置</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="Connecting.Text" xml:space="preserve">
+    <value>連接到小米手環</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="CriticalError" xml:space="preserve">
+    <value>嚴重錯誤</value>
+    <comment>Exceptions</comment>
+  </data>
+  <data name="CurrentData.Header" xml:space="preserve">
+    <value>目前數據</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="DeleteAppData.Content" xml:space="preserve">
+    <value>刪除應用程式的訊息</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="DeleteInfoConfirmNo" xml:space="preserve">
+    <value>不!!!!!</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmText" xml:space="preserve">
+    <value>確定要刪除所有儲存訊息嗎?
+應用程式將被關閉</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmTitle" xml:space="preserve">
+    <value>不可逆的動作</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmYes" xml:space="preserve">
+    <value>是的，我確定</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoSuccessText" xml:space="preserve">
+    <value>訊息刪除。
+退出應用程序。</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoSuccessTitle" xml:space="preserve">
+    <value>動作完成</value>
+    <comment>Info</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>錯誤</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Everyday" xml:space="preserve">
+    <value>每天</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="ExtraCommandHardReset.Text" xml:space="preserve">
+    <value>硬體重設</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandLocate.Text" xml:space="preserve">
+    <value>定位</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandReboot.Text" xml:space="preserve">
+    <value>重啟手環</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommands.Content" xml:space="preserve">
+    <value>手環附加功能</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandSelfTest.Text" xml:space="preserve">
+    <value>自我檢測</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="FirmwareVersion.Text" xml:space="preserve">
+    <value>韌體版本:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Gender.Text" xml:space="preserve">
+    <value>性別:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Green.Text" xml:space="preserve">
+    <value>綠色</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="GreetingText" xml:space="preserve">
+    <value>Thanks for participating in the MiBand Tracker  beta.
+Remember that this is a product in development and problems can arise. If you decide to continue using the application is at your own risk.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="GreetingTitle" xml:space="preserve">
+    <value>歡迎</value>
+    <comment>Info</comment>
+  </data>
+  <data name="HardResetUnavailable" xml:space="preserve">
+    <value>功能無法使用</value>
+    <comment>Info</comment>
+  </data>
+  <data name="HardwareVersion.Text" xml:space="preserve">
+    <value>硬體版本:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Height.Text" xml:space="preserve">
+    <value>身高:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Information.Header" xml:space="preserve">
+    <value>訊息</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="InitialConfigWarningText" xml:space="preserve">
+    <value>某些設定(顏色、位置、鬧鐘)無法恢復。 建議立刻設定</value>
+    <comment>Info</comment>
+  </data>
+  <data name="InitialConfigWarningTitle" xml:space="preserve">
+    <value>新的小米手環同步</value>
+    <comment>Info</comment>
+  </data>
+  <data name="InputDialogFlyoutButton.Content" xml:space="preserve">
+    <value>修改</value>
+    <comment>GenericInputDialog</comment>
+  </data>
+  <data name="InputDialogFlyoutText.Text" xml:space="preserve">
+    <value>輸入新的值</value>
+    <comment>GenericInputDialog</comment>
+  </data>
+  <data name="LeftHand.Text" xml:space="preserve">
+    <value>左手</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="MiBandInformation.Text" xml:space="preserve">
+    <value>小米手環訊息</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="MiBandNotFoundText" xml:space="preserve">
+    <value>請檢查:
+-藍芽開啟
+-小米手環配對
+-小米手環電量</value>
+    <comment>Error</comment>
+  </data>
+  <data name="MiBandNotFoundTitle" xml:space="preserve">
+    <value>尚未找到小米手環</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Necklace.Text" xml:space="preserve">
+    <value>項鍊</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>從不</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="NotifError1" xml:space="preserve">
+    <value>錯誤打開狀態的通知</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError2" xml:space="preserve">
+    <value>錯誤打開即時狀態的通知</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError3" xml:space="preserve">
+    <value>錯誤打開電池通知</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError4" xml:space="preserve">
+    <value>錯誤打開活動通知</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError5" xml:space="preserve">
+    <value>錯誤打開感應器的通知</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="Orange.Text" xml:space="preserve">
+    <value>橙色</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ProfileVersion.Text" xml:space="preserve">
+    <value>資料版本:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="RadioButtonFemale.Content" xml:space="preserve">
+    <value>女性</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="RadioButtonMale.Content" xml:space="preserve">
+    <value>男性</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Red.Text" xml:space="preserve">
+    <value>紅色</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="RightHand.Text" xml:space="preserve">
+    <value>右手</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="SavedData.Text" xml:space="preserve">
+    <value>儲存日期:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataDefault.Content" xml:space="preserve">
+    <value>預設</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataDelete.Content" xml:space="preserve">
+    <value>刪除</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataKeep.Content" xml:space="preserve">
+    <value>繼續</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SetAlarmErrorText" xml:space="preserve">
+    <value>無法儲存鬧鐘在手環上，請檢查連結</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetAlarmErrorTitle" xml:space="preserve">
+    <value>錯誤的鬧鐘設定</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetAlarmEveryday.Content" xml:space="preserve">
+    <value>每天</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmExplanation.Text" xml:space="preserve">
+    <value>醒來前長達30分鐘的淺睡眠</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmFriday.Content" xml:space="preserve">
+    <value>星期五</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmHeader.Text" xml:space="preserve">
+    <value>鬧鐘設定</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmMonday.Content" xml:space="preserve">
+    <value>星期一</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmRepeat.Text" xml:space="preserve">
+    <value>重複在：</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSaturday.Content" xml:space="preserve">
+    <value>星期六</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSmartMode.Header" xml:space="preserve">
+    <value>智慧模式</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSunday.Content" xml:space="preserve">
+    <value>星期天</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmThursday.Content" xml:space="preserve">
+    <value>星期四</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmTime.Text" xml:space="preserve">
+    <value>時間:</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmTuesday.Content" xml:space="preserve">
+    <value>星期二</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmWednesday.Content" xml:space="preserve">
+    <value>星期三</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp1.Text" xml:space="preserve">
+    <value>設定每日想達成的目標</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp2.Text" xml:space="preserve">
+    <value>根據研究，我們建議天至少運動40分鐘</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp3.Text" xml:space="preserve">
+    <value>每天約8000步。</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalHeader.Text" xml:space="preserve">
+    <value>每日目標</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetGoalError" xml:space="preserve">
+    <value>錯誤設定每日目標</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalErrorText" xml:space="preserve">
+    <value>無法儲存每日目標在手環上，請檢查連接</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalErrorTitle" xml:space="preserve">
+    <value>錯誤設定每日目標</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalInvalid" xml:space="preserve">
+    <value>無效的步數</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalRetryText" xml:space="preserve">
+    <value>輸入目標</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetNameError" xml:space="preserve">
+    <value>錯誤設置新名稱</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetNameMaxChars" xml:space="preserve">
+    <value>該名稱必須是最多10個字符</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetStepsError" xml:space="preserve">
+    <value>錯誤設定新的步數</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetStepsInvalid" xml:space="preserve">
+    <value>無效的步數</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetThemeColorError" xml:space="preserve">
+    <value>無法改變色彩</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetUserInfoHeader.Text" xml:space="preserve">
+    <value>使用者資訊</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SetWearLocationError" xml:space="preserve">
+    <value>無法修改配戴位置</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SmartMode" xml:space="preserve">
+    <value>智慧模式</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期天</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="SyncDateTime.Text" xml:space="preserve">
+    <value>同步日期：</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>星期四</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="TitleCurrentSteps.Text" xml:space="preserve">
+    <value>現在步數</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="TitleGoal.Text" xml:space="preserve">
+    <value>每日目標</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="TitleRemainingSteps.Text" xml:space="preserve">
+    <value>剩餘步數</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="WearLocation.Text" xml:space="preserve">
+    <value>配戴位置:</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="WearLocationLeftHand" xml:space="preserve">
+    <value>左手</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="WearLocationNecklace" xml:space="preserve">
+    <value>項鍊</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="WearLocationRightHand" xml:space="preserve">
+    <value>右手</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Weight.Text" xml:space="preserve">
+    <value>體重:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="BandNotReadyText" xml:space="preserve">
+    <value>Still synchronizing data between the app and the band.
+Please wait until the top loading bar disappears.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="BandNotReadyTitle" xml:space="preserve">
+    <value>Synchronizing Mi Band</value>
+    <comment>Error</comment>
+  </data>
+</root>

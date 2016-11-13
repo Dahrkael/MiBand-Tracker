@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Age.Text" xml:space="preserve">
+    <value>Возраст:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="AgeYears.Text" xml:space="preserve">
+    <value>лет</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Alarm1.Header" xml:space="preserve">
+    <value>Сигнал 1</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm1.OffContent" xml:space="preserve">
+    <value>Отключить</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm2.Header" xml:space="preserve">
+    <value>Сигнал 2</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm2.OffContent" xml:space="preserve">
+    <value>Отключить</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm3.Header" xml:space="preserve">
+    <value>Сигнал 2</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Alarm3.OffContent" xml:space="preserve">
+    <value>Отключить</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="AlarmSetTo" xml:space="preserve">
+    <value>Триггеры в</value>
+    <comment>Alarms</comment>
+  </data>
+  <data name="Alias.Text" xml:space="preserve">
+    <value>Псевдоним:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Appearance.Text" xml:space="preserve">
+    <value>Внешний вид:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AppInfo.Text" xml:space="preserve">
+    <value>Информация приложения</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AppVersion.Text" xml:space="preserve">
+    <value>Версия:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="AuthErrorText" xml:space="preserve">
+    <value>Произошла ошибка при инициализации группы соединения.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="BatteryChargedSince" xml:space="preserve">
+    <value>Заряжен </value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryDays" xml:space="preserve">
+    <value> дней назад</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryHours" xml:space="preserve">
+    <value> часов назад</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryMinutes" xml:space="preserve">
+    <value> минут назад</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryMissing" xml:space="preserve">
+    <value>Нет батареи</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryNeverCharged" xml:space="preserve">
+    <value>Никогда не зарядится</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="BatteryRecent" xml:space="preserve">
+    <value>Недавно заряжен</value>
+    <comment>BatteryInfo</comment>
+  </data>
+  <data name="ColorBlue" xml:space="preserve">
+    <value>Синий</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Blue.Text" xml:space="preserve">
+    <value>Синий</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ButtonSave.Content" xml:space="preserve">
+    <value>Сохранить</value>
+    <comment>All Screens</comment>
+  </data>
+  <data name="ChangeUserInfo.Content" xml:space="preserve">
+    <value>Изменение информации пользователя</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ColorTheme.Text" xml:space="preserve">
+    <value>Цвет темы:</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Configurations.Header" xml:space="preserve">
+    <value>Настройка</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="Connecting.Text" xml:space="preserve">
+    <value>Подключение к to Mi Band</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="CriticalError" xml:space="preserve">
+    <value>Критическая Ошибка</value>
+    <comment>Exceptions</comment>
+  </data>
+  <data name="CurrentData.Header" xml:space="preserve">
+    <value>Текущие Данные</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="DeleteAppData.Content" xml:space="preserve">
+    <value>Удалить информацию из приложения</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="DeleteInfoConfirmNo" xml:space="preserve">
+    <value>Нееет!!</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmText" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить все сохраненные данные?
+
+Приложение будет закрыто.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmTitle" xml:space="preserve">
+    <value>Необратимое действие</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoConfirmYes" xml:space="preserve">
+    <value>Да, я уверен</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoSuccessText" xml:space="preserve">
+    <value>Информация была удалена.
+
+Выход из приложения.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="DeleteInfoSuccessTitle" xml:space="preserve">
+    <value>Действие завершено</value>
+    <comment>Info</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Everyday" xml:space="preserve">
+    <value>Ежедневный</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="ExtraCommandHardReset.Text" xml:space="preserve">
+    <value>Жесткая перезагрузка (Хард Ресет)</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandLocate.Text" xml:space="preserve">
+    <value>Найти</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandReboot.Text" xml:space="preserve">
+    <value>Перезагрузка браслета</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommands.Content" xml:space="preserve">
+    <value>Группа дополнительных функций</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ExtraCommandSelfTest.Text" xml:space="preserve">
+    <value>Самопроверка</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="FirmwareVersion.Text" xml:space="preserve">
+    <value>Версия прошивки:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Пятница</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Gender.Text" xml:space="preserve">
+    <value>Пол:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="ColorGreen" xml:space="preserve">
+    <value>Зеленый</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Green.Text" xml:space="preserve">
+    <value>Зеленый</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="GreetingText" xml:space="preserve">
+    <value>Спасибо за участие в MiBand Tracker  beta.
+
+Помните, что это продукт только развития и  могут возникать проблемы. Если вы решили продолжить использовать приложение, Вы используете на свой страх и риск.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="GreetingTitle" xml:space="preserve">
+    <value>Добро пожаловать</value>
+    <comment>Info</comment>
+  </data>
+  <data name="HardResetUnavailable" xml:space="preserve">
+    <value>Функция недоступна</value>
+    <comment>Info</comment>
+  </data>
+  <data name="HardwareVersion.Text" xml:space="preserve">
+    <value>Версия аппаратного обеспечения:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Height.Text" xml:space="preserve">
+    <value>Высота:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="Information.Header" xml:space="preserve">
+    <value>Информация</value>
+    <comment>Hub Pivot</comment>
+  </data>
+  <data name="InitialConfigWarningText" xml:space="preserve">
+    <value>Some settings (color, location, alarms) can not be recovered.
+It is recommended to configure them now.</value>
+    <comment>Info</comment>
+  </data>
+  <data name="InitialConfigWarningTitle" xml:space="preserve">
+    <value>Новый Mi Band синхронизирован</value>
+    <comment>Info</comment>
+  </data>
+  <data name="InputDialogFlyoutButton.Content" xml:space="preserve">
+    <value>Изменить</value>
+    <comment>GenericInputDialog</comment>
+  </data>
+  <data name="InputDialogFlyoutText.Text" xml:space="preserve">
+    <value>Введите новое значение</value>
+    <comment>GenericInputDialog</comment>
+  </data>
+  <data name="LeftHand.Text" xml:space="preserve">
+    <value>Левая Рука</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="MiBandInformation.Text" xml:space="preserve">
+    <value>Mi Band информация</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="MiBandNotFoundText" xml:space="preserve">
+    <value>Проверьте, что:
+
+-Bluetooth включен
+
+-Mi Band соединен с телефоном
+
+-Mi Band заряжен</value>
+    <comment>Error</comment>
+  </data>
+  <data name="MiBandNotFoundTitle" xml:space="preserve">
+    <value>Mi Band не найден</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Понедельник</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Necklace.Text" xml:space="preserve">
+    <value>Ожерелье</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Никогда не</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="ColorOrange" xml:space="preserve">
+    <value>Оранжевый</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Orange.Text" xml:space="preserve">
+    <value>Оранжевый</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="ProfileVersion.Text" xml:space="preserve">
+    <value>Версия профиля:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="RadioButtonFemale.Content" xml:space="preserve">
+    <value>Женщина</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="RadioButtonMale.Content" xml:space="preserve">
+    <value>Мужчина</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="ColorRed" xml:space="preserve">
+    <value>Красный</value>
+    <comment>colors</comment>
+  </data>
+  <data name="Red.Text" xml:space="preserve">
+    <value>Красный</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="RightHand.Text" xml:space="preserve">
+    <value>Правая Рука</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Суббота</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="SavedData.Text" xml:space="preserve">
+    <value>Сохраненные данные:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataDefault.Content" xml:space="preserve">
+    <value>По умолчанию</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataDelete.Content" xml:space="preserve">
+    <value>Удалить</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SavedDataKeep.Content" xml:space="preserve">
+    <value>Держать</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SetAlarmErrorText" xml:space="preserve">
+    <value>Не удалось сохранить сигнал в группе, проверьте соединение</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetAlarmErrorTitle" xml:space="preserve">
+    <value>Ошибка установки сигнала</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetAlarmEveryday.Content" xml:space="preserve">
+    <value>Повседневно</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmExplanation.Text" xml:space="preserve">
+    <value>Проснуться на 30 минут раньше, во время легкого сна</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmFriday.Content" xml:space="preserve">
+    <value>Пятница</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmHeader.Text" xml:space="preserve">
+    <value>Настройки сигнала</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmMonday.Content" xml:space="preserve">
+    <value>Понедельник</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmRepeat.Text" xml:space="preserve">
+    <value>Повторяет на:</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSaturday.Content" xml:space="preserve">
+    <value>Суббота</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSmartMode.Header" xml:space="preserve">
+    <value>Умный режим</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmSunday.Content" xml:space="preserve">
+    <value>Воскресенье</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmThursday.Content" xml:space="preserve">
+    <value>Четверг</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmTime.Text" xml:space="preserve">
+    <value>Время:</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmTuesday.Content" xml:space="preserve">
+    <value>Вторник</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetAlarmWednesday.Content" xml:space="preserve">
+    <value>Среда</value>
+    <comment>SetAlarm Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp1.Text" xml:space="preserve">
+    <value>Установить ежедневную цель кол-ва шагов которую вы хотите достичь</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp2.Text" xml:space="preserve">
+    <value>Согласно некоторым исследованиям, мы рекомендуем делать упражнения не менее 40 минут в день.</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalExp3.Text" xml:space="preserve">
+    <value>Это около 8000 шагов в день.</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetDailyGoalHeader.Text" xml:space="preserve">
+    <value>Ежедневные Цели</value>
+    <comment>SetDailyGoal Screen</comment>
+  </data>
+  <data name="SetGoalError" xml:space="preserve">
+    <value>Ошибка установка ежедневных целей</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalErrorText" xml:space="preserve">
+    <value>Не удалось сохранить ежедневную цель в группу, проверьте соединение</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalErrorTitle" xml:space="preserve">
+    <value>Ошибка настройки ежедневных целей</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalInvalid" xml:space="preserve">
+    <value>Недопустимое число шагов</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetGoalRetryText" xml:space="preserve">
+    <value>Введите цель</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetNameError" xml:space="preserve">
+    <value>Ошибка установки нового имя</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetNameMaxChars" xml:space="preserve">
+    <value>Имя должно быть не более 10 символов</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetStepsError" xml:space="preserve">
+    <value>Ошибка установки нового номера шагов</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetStepsInvalid" xml:space="preserve">
+    <value>Недопустимое число шагов</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetThemeColorError" xml:space="preserve">
+    <value>Не удалось изменить цветовую схему</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SetUserInfoHeader.Text" xml:space="preserve">
+    <value>Информация пользователя</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="SetWearLocationError" xml:space="preserve">
+    <value>Не удалось изменить расположение местонахождения</value>
+    <comment>Error</comment>
+  </data>
+  <data name="SmartMode" xml:space="preserve">
+    <value>Умный Режим</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Воскресенье</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="SyncDateTime.Text" xml:space="preserve">
+    <value>Дата синхронизации:</value>
+    <comment>Information Pivot</comment>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Четверг</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="TitleCurrentSteps.Text" xml:space="preserve">
+    <value>Нынешние Шаги</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="TitleGoal.Text" xml:space="preserve">
+    <value>Ежедневные Цели</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="TitleRemainingSteps.Text" xml:space="preserve">
+    <value>Оставшиеся Шаги</value>
+    <comment>Current Data Pivot</comment>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Вторник</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="WearLocation.Text" xml:space="preserve">
+    <value>Износ расположение:</value>
+    <comment>Config Pivot</comment>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Среда</value>
+    <comment>Dias de la semana</comment>
+  </data>
+  <data name="Weight.Text" xml:space="preserve">
+    <value>Вес:</value>
+    <comment>SetUserInfo Screen</comment>
+  </data>
+  <data name="WearLocationLeftHand" xml:space="preserve">
+    <value>Левая рука</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="WearLocationNecklace" xml:space="preserve">
+    <value>Ожерелье</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="WearLocationRightHand" xml:space="preserve">
+    <value>Правая Рука</value>
+    <comment>Wear Locations</comment>
+  </data>
+  <data name="APBForum.Label" xml:space="preserve">
+    <value>Форум помощи (испанский &amp; английский язык)</value>
+    <comment>BottomAppBar</comment>
+  </data>
+  <data name="APBReport.Label" xml:space="preserve">
+    <value>Послать отчет по электронной почте</value>
+    <comment>BottomAppBar</comment>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Приложение-компаньон для фитнес-браслета Xiaomi Mi Band.
+Шагомер, уведомления и отслеживание фаз сна.
+Требуется фитнес-браслет Xiaomi Mi Band, для работы, соединенный при помощи Bluetooth.
+
+ВАЖНО:
+В случае, если уведомление о шагах или вибросигнал не работают, не соединяется с браслетом, перезапустите телефон и попробуйте снова.</value>
+    <comment>App Data</comment>
+  </data>
+  <data name="NotifError1" xml:space="preserve">
+    <value>Ошибка включения главных уведомлений</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError2" xml:space="preserve">
+    <value>Ошибка включения уведомлений действий в реальном времени</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError3" xml:space="preserve">
+    <value>Ошибка включения уведомлений батареи</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError4" xml:space="preserve">
+    <value>Ошибка включения уведомлений об активности</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="NotifError5" xml:space="preserve">
+    <value>Ошибка включения датчика уведомлений</value>
+    <comment>Notification start error</comment>
+  </data>
+  <data name="BandNotReadyText" xml:space="preserve">
+    <value>Still synchronizing data between the app and the band.
+Please wait until the top loading bar disappears.</value>
+    <comment>Error</comment>
+  </data>
+  <data name="BandNotReadyTitle" xml:space="preserve">
+    <value>Synchronizing Mi Band</value>
+    <comment>Error</comment>
+  </data>
+</root>

@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="MyBand.Pages.SetDailyGoal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBand.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Mi Band Tracker" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock x:Uid="SetDailyGoalHeader" Text="Objetivo diario" FontSize="{StaticResource TextStyleExtraLargePlusFontSize}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Margin="0,10,0,0"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Margin="0,10,0,0" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="6" Grid.RowSpan="2">
+                <TextBlock x:Uid="SetDailyGoalExp1" Text="Establezca el objetivo diario de pasos que desee alcanzar" FontSize="{StaticResource TextStyleLargeFontSize}" Margin="15,0,15,5" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" UseLayoutRounding="True" TextAlignment="Center"/>
+                <TextBlock x:Uid="SetDailyGoalExp2" Text="Según algunos estudios, te recomendamos hacer por lo menos 40 minutos de ejercicio al día." FontSize="{StaticResource TextStyleSmallFontSize}" Foreground="{StaticResource PhoneDisabledBrush}" Margin="15,5"  VerticalAlignment="Top" TextWrapping="Wrap" TextAlignment="Center" />
+                <TextBlock x:Uid="SetDailyGoalExp3" Text="Eso son unos 8000 pasos al día." FontSize="{StaticResource TextStyleSmallFontSize}" Foreground="{StaticResource PhoneDisabledBrush}" Margin="15,5" VerticalAlignment="Center" TextWrapping="Wrap"  TextAlignment="Center"/>
+            </StackPanel>
+            <TextBox x:Name="txtGoal" MaxLength="9" Grid.Column="2" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="2" FontSize="{StaticResource TextStyleExtraExtraLargeFontSize}" InputScope="Number" TextAlignment="Center" Text="8000" />
+            <Button x:Uid="ButtonSave" x:Name="btnSave" Content="Guardar" Grid.Row="6" HorizontalAlignment="Center" Grid.ColumnSpan="4" Grid.Column="1" Click="btnSave_Click"/>
+        </Grid>
+    </Grid>
+</Page>
